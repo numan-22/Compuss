@@ -1466,9 +1466,7 @@ body{
   .slider-1 .owl-prev::after,.slider-1 .owl-next::before{
     bottom: -54px;
   }
-  .feature-bg{
-    height: 600px;
-  }
+
   .work-with-us{
     padding: 5px 0 0 0;
   }
