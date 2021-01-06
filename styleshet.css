@@ -1,0 +1,1730 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Josefin Sans;
+}
+
+
+/* top menu */
+.top-menu-bg{
+    background-color: black;
+    width: 100%;
+    padding: 15px 0;
+   
+}
+.top-menu{
+  display: flex;
+    justify-content: space-between;
+    padding: 0 81px;
+    margin: 0 auto;
+
+}
+
+.top-menu-text a{
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+/* navigation */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.bgcolor.scrolled{
+  background-color:black;
+  transition: 1s;
+}
+.icon-position{
+  margin: 0 0 0 auto;
+  cursor: pointer;
+
+}
+
+.nav-border{
+  padding: 20px 78px;
+  z-index: 2;
+}
+.navbar-expand-xl .navbar-nav{
+  flex-direction: column;
+  justify-content: center;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background:black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align:center;
+}
+
+.sidenav a {
+  padding: 6px 0px;
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+
+}
+
+.sidenav a:hover{
+  color: #818181;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 25px;
+  right: 60px;
+  font-size: 74px;
+  margin-left: 50px;
+}
+/* banner */
+.banner{
+    background: linear-gradient(to right,rgba(0, 0, 0, 0.377),rgba(0, 0, 0, 0.377)),url("images/DSC02196-1024x683.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+   
+}
+.banner-text{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  height: fit-content;
+  
+}
+.banner-text p{
+  color:white;
+  text-align: center;
+  font-size: 18px;
+}
+.banner-text h1{
+  font-size: 114px;
+  color: white;
+}
+
+@keyframes  your-animation {        
+  from {
+    opacity : 0;
+    top : -500px;
+  }
+  to {
+    opacity : 1;
+    top : 0;
+  }      
+}
+@keyframes  my-animation {        
+  from {
+    opacity : 0;
+    left : -500px;
+  }
+  to {
+    opacity : 1;
+    left : 0;
+  }      
+}
+@keyframes  my-animation-2 {        
+  from {
+    opacity : 0;
+    right : -500px;
+  }
+  to {
+    opacity : 1;
+    right : 0;
+  }      
+}
+
+.run-animation {
+  position: relative;
+  animation: your-animation 2s ease;
+}
+.run-animation-2 {
+  position: relative;
+  animation: my-animation 2s ease;
+}
+.run-animation-3 {
+  position: relative;
+  animation: my-animation-2 2s ease;
+}
+#logo {
+  text-align: center;
+ 
+}
+.banner-text h6{
+  font-size: 22px;
+  color: white;
+  font-weight: 400;
+  max-width: 753px;
+  margin: 0 auto;
+}
+.buttons{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 273px;
+  padding: 27px 0 0 0;
+}
+.button-1{
+  background-color: transparent;
+  border: 1px solid white;
+  width: 126px;
+  padding: 10px 0;
+  display: inline-block;
+  
+
+}
+.button-1 a{
+  color: white;
+  font-size: 14px;
+  padding: 15px 11px;
+ text-align: center;
+ text-decoration: none;
+
+}
+.button-1:hover a{
+  background-color: white;
+  color:#707070;
+}
+/* meet will stein */
+.meet-heading{
+  margin: 107px auto 0 auto;
+  text-align: center;
+}
+.meet-heading h1{
+  font-size: 65px;
+  font-weight: 400;
+  color: #000000;
+
+}
+.line{
+  margin: 0 auto;
+  background-color: #000000;
+  width: 68px;
+  padding: 2px 0;
+}
+.meet-heading p{
+  font-size: 17px;
+    font-weight: 400;
+    color: #000000;
+    margin: 25px auto 35px auto;
+    max-width: 1128px;
+    line-height: 2em;
+
+}
+.team{
+  background-image: url("images/6_20200901001328_17565771_xlarge.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+.team::after{
+  background-color: black;
+    width: 84px;
+    padding: 9px 0;
+    position: absolute;
+    content: " ";
+    right: 0;
+    top: -7px;
+}
+.team::before{
+  background-color: black;
+    width: 84px;
+    padding: 9px 0;
+    position: absolute;
+    content: " ";
+    left: 0;
+    bottom: -9px;
+}
+.team-detail-bg{
+  background-image: url(images/7-4-1024x557.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 360px;
+}
+.team-detail-text p{
+  color: #000000;
+  font-size: 17px;
+  text-align: center;
+  margin: 0px auto;
+  max-width: 1078px;
+  padding: 35px 0 0 0;
+  line-height: 2em;
+
+}
+.team-detail-info{
+  display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    max-width: 759px;
+    padding: 28px 24px 0 0px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.signature img{
+ max-width: 100%;
+}
+.athority{
+  margin: 9px 0 0 0;
+}
+.athority p{
+  color: #757575;
+  font-size: 18px;
+}
+.athority p:nth-child(2){
+  color: black;
+  font-size: 18px;
+}
+.more-detail{
+  background-color: black;
+  display: inline-block;
+  padding: 17px 0px;
+  width: 181px;
+  border: none;
+  height: 58px;
+  position: relative;
+
+}
+.more-detail a{
+  color: white;
+    font-size: 16px;
+    padding: 20px 44px;
+    text-decoration: none;
+    text-align: center;
+}
+.more-detail::after{
+  position: absolute;
+    content: " ";
+    background-color: #707070;
+    padding: 1px;
+    width: 25px;
+    right: -16px;
+   top: 24px;
+
+}
+/* featured carousal */
+.feature-bg{
+  background: linear-gradient(to right,rgba(0, 0, 0, 0.411),rgba(0, 0, 0, 0.411)), url("images/Mask\ Group\ 1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0 0px 127px 0;
+ 
+
+}
+
+.feature-heading{
+  margin: 0 auto;
+  text-align: center;
+  padding: 93px 0 0 0;
+}
+.feature-heading h1{
+  color: white;
+  font-size: 65px;
+  font-weight: 400;
+}
+.line-1{
+  background-color: white;
+  margin: 0 auto;
+  width: 68px;
+  padding: 2px 0;
+}
+
+.slider-1{
+    margin: 82px auto 0 auto;
+}
+.item-1{
+    margin: 0 auto;
+    width: 80%;
+}
+.slider-1 .owl-dots{
+    display: none;
+}
+.slider-1 .owl-next span,.owl-prev span{
+    display: none;
+}
+.slider-1 .owl-next::before{
+    position: absolute;
+    content: "\f178";
+    font-family: FontAwesome;
+    color: white;
+    bottom: -100px;
+    font-size: 36px;
+    margin: 0 0px 0 26px;
+}
+.slider-1 .owl-prev::after{
+    position: absolute;
+    content: "\f177";
+    font-family: FontAwesome;
+    color: white;
+    bottom: -100px;
+    font-size: 37px;
+    margin: 0 0px 0 -25px;
+}
+/* compas team */
+.campus-carousal{
+  margin: 67px auto 50px auto;
+  max-width: 1248px;
+    
+}
+
+.team-1{
+  position: relative;
+  width: 95%;
+  display: block;
+  margin: 0 auto;
+}
+.team-1-box{
+  position: absolute;
+  background-color: white;
+  margin: 0 auto;
+  width: 77%;
+  padding: 17px 0;
+  left: 0;
+  right: 0;
+  bottom: 47px;
+}
+.team-1-box p{
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+}
+.team-1-box h6{
+  font-size: 21px;
+  text-align: center;
+}
+
+.campus-carousal .owl-dots{
+  display: none;
+}
+.campus-carousal .owl-next span,.owl-prev span{
+  display: none;
+}
+.campus-carousal .owl-next::before{
+  position: absolute;
+  content: "\f178";
+  font-family: FontAwesome;
+  color:black;
+  bottom: -44px;
+  font-size: 36px;
+  margin: 0 0px 0 26px;
+}
+.campus-carousal .owl-prev::after{
+  position: absolute;
+  content: "\f177";
+  font-family: FontAwesome;
+  color:black;
+  bottom: -44px;
+  font-size: 37px;
+  margin: 0 0px 0 -25px;
+}
+/* work with us */
+.work-with-us{
+  display: flex;
+  align-items: center;
+  padding: 118px 0 0 0;
+}
+ .work-image img{
+  width: 100%;
+}
+.work-bg{
+  background-color: #3E3E3E;
+    width: 62%;
+    margin: 44px 0 25px -136px;
+    min-height: 535px;
+    padding: 80px 0 0 11px;
+} 
+.work-bg-text{
+  max-width: 570px;
+  margin: 0 auto;
+}
+.work-bg-text h1{
+  font-size: 54px;
+  color: white;
+  font-weight: 400;
+  margin: 0 0 0 -70px;
+ 
+}
+.work-bg-text h1::before{
+  background-color: white;
+    width: 60px;
+    height: 3px;
+    display: inline-block;
+    content: " ";
+    transform: translate(73px);
+    margin: -30px 0;
+
+}
+.work-bg-text p{
+  font-size: 19px;
+    color: white;
+    font-weight: lighter;
+    margin: 70px auto 42px auto;
+   
+ 
+}
+.view-all{
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 10px 0px;
+  width: 119px;
+  text-align: center;
+  color: white;
+ 
+
+}
+.view-all::after{
+  display: inline-block;
+  background-color: white;
+  width: 40px;
+  content: " ";
+  transform: translate(37px);
+  margin: 5px -20px;
+  height: 2px;
+}
+/* blogs */
+.blog-row{
+  margin: 110px auto 117px auto;
+  max-width: 1249px;
+}
+.blog-content{
+  border: 1px solid #C5C5C5;
+  text-align: center;
+}
+.blog-content img{
+ max-width: 100%;
+ margin: 9px auto 36px auto;
+ 
+}
+
+
+.blog-content p{
+  font-size: 16px;
+}
+.blog-content p:nth-child(3) {
+  font-size: 16px;
+  margin: 0 auto;
+  max-width: 306px;
+}
+.more-detail-2{
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  display: inline-block;
+  padding: 16px 0;
+  width: 173px;
+  border: none;
+  margin: 34px auto 39px auto;
+
+}
+.more-detail-2::after{
+  background-color: #3E3E3E;
+    width: 25px;
+    height: 2px;
+    display: inline-block;
+    content: " ";
+    transform: translate(44px);
+    margin: 0 -11px;
+}
+/* video */
+.video-bg{
+  background-image: url("images/pattern-knit-feathers1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 959px;
+}
+.video-heading{
+  margin: 0 auto 0 auto;
+  text-align: center;
+}
+.video-heading h1{
+  font-size: 65px;
+    font-weight: 400;
+    color: #000000;
+    padding: 80px 0 0 0;
+}
+.video{
+  position: relative;
+}
+.video img{
+  width: 82%;
+  margin: 72px auto 0 auto;
+  display: block;
+  
+}
+
+.video-icon img{
+  width: 10%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  cursor: pointer;
+ 
+}
+/* explor communities */
+.explor-row{
+  margin: 60px auto 60px auto;
+  max-width: 1221px;
+
+}
+.explor-col{
+ padding: 0;
+}
+.explor-bg{
+  background:linear-gradient(180deg,rgba(255, 255, 255, 0.116),rgba(0, 0, 0, 0.336)), url("images/naomi-ellsworth-EMPLSuvDuhQ-unsplash.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 366px;
+}
+.explor-text{
+  display: flex;
+ height: 100%;
+  align-items: flex-end;
+  padding: 0 0 0 45px;
+}
+.explor-text p{
+  color: white;
+  font-size: 16px;
+  margin: 0;
+}
+.explor-text h2{
+ font-size: 34px;
+ color: white;
+ font-weight: 400;
+}
+.explor-2-bg{
+  background:linear-gradient(180deg,rgba(255, 255, 255, 0.116),rgba(0, 0, 0, 0.336)), url("images/nasim-keshmiri-7bF7X2RGESk-unsplash.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 366px;
+}
+.explor-3-bg{
+  background:linear-gradient(180deg,rgba(255, 255, 255, 0.116),rgba(0, 0, 0, 0.336)), url("images/francesca-tosolini-tDVvS8eOMig-unsplash.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 366px;
+}
+/* testimonial */
+.testimonial-bg{
+  background-color: #F3F3F3;
+  width: 100%;
+  height: 700px;
+}
+.testimonial-row{
+  margin: 34px auto 0 auto;
+  max-width: 1237px;
+ 
+}
+.testimonial-col{
+  transform: translate(0%, 14%);
+}
+.testimonial-1{
+  background-color: white;
+    border-top: 12px solid #BCBCBC;
+    padding: 21px 5px 43px 5px;
+    text-align: center;
+}
+.testimonial-1 p{
+  font-size: 18px;
+  margin: 23px auto 0 auto;
+    max-width: 344px;
+}
+.honor{
+  text-align: center;
+}
+.honor img{
+  margin: -29px 0 0 0;
+  max-width: 100%;
+}
+.honor p{
+ font-size: 18px;
+ margin: 0;
+}
+.honor p:nth-child(3){
+  font-size: 11px;
+  color:  #BCBCBC;
+}
+/* join form */
+.join-bg{
+  background:linear-gradient(to right,rgba(105, 104, 104, 0.808),rgba(105, 104, 104, 0.808)), url("images/pattfeathers1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 828px;
+}
+.join-text{
+  text-align: center;
+  padding: 86px 0 0 0;
+}
+.join-text h6{
+  font-size: 39px;
+  color: #B5B5B5;
+  text-align: center;
+}
+.join-text h1{
+  font-size: 84px;
+  color: white;
+  font-weight: 400;
+  
+}
+.join-text p{
+  color:#D6D6D6;
+  font-size: 22px;
+  margin: 23px auto;
+  max-width: 845px;
+  line-height: 2em;
+}
+.join-form{
+  padding: 38px 0px;
+  max-width: 858px;
+  margin: 0 auto;
+}
+
+.join-form input[type=text]{
+  border-bottom: 2px solid #D6D6D6;
+    background-color: transparent;
+    display: inline-block;
+    color: #D6D6D6;
+    padding: 27px 4px;
+    outline: none;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    margin: 0px 15px;
+    width: 44%;
+  
+}
+.join-form input[type=text]::placeholder,.join-form textarea::placeholder{
+  color:  #D6D6D6;
+}
+.join-form textarea{
+  border-bottom: 2px solid #D6D6D6;
+  background-color: transparent;
+  display: inline-block;
+  color: #D6D6D6;
+  padding: 32px 0px 60px 0;
+  outline: none;
+  border-right: none;
+  border-top: none;
+  border-left: none;
+  margin: 0px 15px;
+  width: 92%;
+  resize: none;
+}
+.submit-button{
+  background-color: white;
+  color: #b9b4b4e0;
+  padding: 10px 50px;
+  text-align: center;
+  font-size: 22px;
+  border: none;
+  border-radius: 10px;
+  display: block;
+  margin: 57px auto 0 auto;
+
+}
+.submit-button:focus{
+  outline: none;
+}
+/* footer */
+.footer-text{
+  text-align: center;
+  padding: 64px 0 0 0;
+  border-bottom: 1px solid #FFFFFF;
+  background-color: #FCFCFC;
+    
+    
+}
+.footer-text p{
+  font-size: 19px;
+}
+.footer-text p:nth-child(5){
+  font-size: 19px;
+  padding: 45px 0 0 0;
+}
+.footer-text i{
+  padding: 0 5px;
+}
+.footer-text p:nth-child(7){
+  font-size: 19px;
+  margin: 28px auto 44px auto;
+  max-width: 1240px;
+  line-height: 2em;
+  
+}
+ /************************* Sell Your Home **************************/
+.banner-2{
+  background:linear-gradient(to right,rgba(0, 0, 0, 0.377),rgba(0, 0, 0, 0.377)), url("images/ga1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 385px;
+  position: relative;
+}
+.banner-2-text{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  height: fit-content;
+
+}
+.banner-2-text h1{
+  font-size: 95px;
+  color: white;
+  
+}
+/* heading here seller */
+.seller-bg{
+  background-image: url("images/AdobeStock_224510083.png");
+  background-size: cover;
+  background-position: center;
+  height: 751px;
+}
+.seller-row{
+  margin: 0 auto;
+  max-width: 1264px;
+  padding: 88px 0 0 0;
+  align-items: center;
+}
+.seller-text{
+  margin: 0 auto;
+  max-width: 597px;
+}
+.seller-text h1{
+ font-size: 62px;
+ font-weight: 400;
+ padding: 38px 0 0 0;
+}
+.seller-text p{
+ 
+ line-height: 2em; 
+  font-size: 19px;
+   
+  
+}
+.seller-button{
+  background-color: black;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  padding: 19px 0;
+  width: 176px;
+  border: none;
+  outline: none;
+  margin: 16px 0 0 0;
+}
+.seller-button::after{
+  background-color: #3E3E3E;
+    width: 25px;
+    height: 2px;
+    display: inline-block;
+    content: " ";
+    transform: translate(46px);
+    margin: 0 -11px;
+
+
+}
+.seller-image img{
+  width: 100%;
+}
+
+/* seller-2-bg */
+.seller-2-bg{
+  background-image: url("images/AdobeStock_281265413-1024x538.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 751px;
+}
+/* meeting */
+.meeting-bg{
+  background-image: url("images/Group\ 136.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 83px 0 0 0;
+  height: 100vh;
+}
+.meeting-text{
+  text-align: center;
+}
+.meeting-text p{
+  font-size: 19px;
+  text-align: center;
+  margin: 62px auto 15px auto;
+  max-width: 1090px;
+  line-height: 2em;
+}
+.meeting-text p:nth-child(2){
+  font-size: 19px;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1155px;
+}
+.meeting-button{
+  background-color: transparent;
+  color: black;
+  font-size: 16px;
+  border: 1px solid black;
+  text-align: center;
+  padding: 16px 0;
+  width: 173px;
+  margin: 33px 0;
+}
+.meeting-button::after{
+   
+  background-color: black;
+   width: 25px;
+  height: 1px;
+  display: inline-block;
+  content: " ";
+  transform: translate(54px);
+  margin: 0 -11px;
+}
+/* property */
+.property-row{
+  margin: 83px auto 0 auto;
+  max-width: 1245px;
+}
+.property-col{
+  margin: 0 0 202px 0;
+}
+.property-1 img{
+  max-width: 100%;
+  height: auto;
+  position: relative;
+}
+.property-1-text{
+  background-color: white;
+  padding: 19px 29px;
+  position: absolute;
+  bottom: -159px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  box-shadow: 0px 0px 12px 0px grey;
+  max-width: 296px;
+}
+.property-1-text h6{
+  font-size: 28px;
+  font-weight: 400;
+}
+.property-1-text p{
+  font-size: 13px;
+}
+
+/************************** welcome home *********************************/
+.banner-3{
+  background:linear-gradient(to right,rgba(0, 0, 0, 0.377),rgba(0, 0, 0, 0.377)), url("images/buyer.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat ;
+  height: 385px;
+  position: relative;
+}
+/* home buyer */
+.home-buyer-bg{
+  background-image: url("images/AdobeStock_281265413.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 73px;
+  height: 858px;
+  margin: 0 0 88px 0;
+}
+.buyer-row{
+  display: flex;
+  align-items: center;
+}
+.buyer-text{
+  margin: 0 auto;
+  max-width: 572px;
+  width: 50%;
+}
+.buyer-text h1{
+  font-size: 62px;
+  font-weight: 400;
+  padding: 38px 0 0 0;
+}
+.buyer-text p{
+  line-height: 2em;
+  font-size: 19px;
+}
+.buyer-image{
+  width: 45%;
+}
+.buyer-image img{
+  width: 100%;
+}
+.buyer-button{
+  background-color:transparent;
+    color:black;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    padding: 19px 0;
+    width: 176px;
+    border: 1px solid black;
+    outline: none;
+    margin: 16px 0 0 0;
+}
+.buyer-button::after{
+  background-color: black;
+    width: 25px;
+    height: 2px;
+    display: inline-block;
+    content: " ";
+    transform: translate(46px);
+    margin: 0 -11px;
+}
+/* your city community */
+.community-bg{
+  background-image: url("images/AdobeStock_30205775.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+.community-box{
+  background-color: rgba(255, 255, 255, 0.932);
+    padding: 43px 53px;
+    margin: 35px 0;
+    position: absolute;
+    top: 0px;
+    right: 9%;
+    bottom: 0;
+
+}
+.community-box-text{
+  max-width: 487px;
+}
+.community-box-text h6{
+  font-size: 52px;
+}
+.community-box-text p{
+  font-size: 22px;
+  padding: 4px 0;
+ 
+}
+/****************************heading hero *****************************/
+.banner-4{
+  background:linear-gradient(to right,rgba(0, 0, 0, 0.377),rgba(0, 0, 0, 0.377)), url("images/smiling-mother-choosing-new-car-in-car-salon-4173200.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat ;
+  height: 385px;
+  position: relative;
+}
+
+.house-1 img{
+  max-width: 100%;
+  margin: 0 0 26px 0;
+ 
+}
+
+
+.house-row{
+  margin: 42px auto 0 auto;
+    max-width: 1245px;
+}
+.houses-detail{
+  margin: 32px auto auto auto;
+}
+.houses-detail p{
+  font-size: 20px;
+  margin: 0 auto auto auto;
+  max-width: 1144px;
+  text-align: center;
+  line-height: 2em;
+
+}
+/* more detail-text */
+#text{
+  display:none;
+}
+
+.button-content{
+  margin: 32px auto 50px auto;
+    background-color: transparent;
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid black;
+    display: block;
+    padding: 16px 0;
+    width: 170px;
+    
+}
+.button-content:focus{
+  outline: none;
+}
+.button-content::after{
+  background-color: #3E3E3E;
+    width: 25px;
+    height: 2px;
+    display: inline-block;
+    content: " ";
+    transform: translate(46px);
+    margin: 0 -11px;
+}
+/* *******************meet the team *************************/
+.banner-5{
+  background:linear-gradient(to right,rgba(0, 0, 0, 0.377),rgba(0, 0, 0, 0.377)), url("images/6_20200901001353_17565772_xlarge.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat ;
+  height: 385px;
+  position: relative;
+}
+.meat-text p{
+  font-size: 19px;
+  margin: 80px auto 0 auto;
+  max-width: 1180px;
+  text-align: center;
+}
+.member-row{
+  margin: 45px auto 0 auto;
+  max-width: 1247px;
+}
+.member{
+  position: relative;
+  margin: 0 0 110px 0;
+}
+.member img{
+  max-width: 100%;
+}
+
+.member-intro{
+  background-color: white;
+  margin: 0 auto;
+  padding: 24px 0;
+  position: absolute;
+  bottom: -58px;
+  width: 79%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  border: 1px solid grey;
+}
+.member-intro h6{
+  font-size: 22px;
+
+}
+.member-intro p{
+  font-size: 16px;
+
+}
+.member-readmore-button::after{
+  background-color: black;
+    width: 25px;
+    height: 2px;
+    display: inline-block;
+    content: " ";
+    transform: translate(42px);
+    margin: 0 -11px;
+
+}
+.member-readmore-button{
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 10px 37px;
+  text-align: center;
+  font-size: 16px;
+ 
+}
+.member-readmore-button:focus{
+  outline: none;
+  
+}
+/* *********************communities ***************************/
+.banner-6-text{
+  position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    height: fit-content;
+}
+.banner-6-text h1{
+  font-size: 95px;
+    color: white;
+}
+.banner-6{
+  background:linear-gradient(to right,rgba(0, 0, 0, 0.377),rgba(0, 0, 0, 0.377)), url("images/6_20200901001229_17565767_xlarge.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat ;
+  height: 385px;
+  position: relative;
+}
+.explor-6-bg{
+  background:linear-gradient(180deg,rgba(255, 255, 255, 0.116),rgba(0, 0, 0, 0.336)), url("images/francesca-tosolini-RP29Wz6mIOA-unsplash.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 366px;
+}
+.explor-7-bg{
+  background:linear-gradient(180deg,rgba(255, 255, 255, 0.116),rgba(0, 0, 0, 0.336)), url("images/pexels-pixabay-210538.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 366px;
+}
+ .explor-view-all{
+  background-color: black;
+    color: white;
+    font-size: 16px;
+    padding: 10px 0;
+    width: 100px;
+    display: block;
+    margin: 34px auto 0 auto;
+    border: none;
+  } 
+  /* *********home valuation ************ */
+  .banner-7{
+  background:linear-gradient(to right,rgba(0, 0, 0, 0.377),rgba(0, 0, 0, 0.377)), url("images/kitchen-1687121_1920.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat ;
+  height: 385px;
+  position: relative;
+}
+.home-worth{
+  background: linear-gradient(90deg,rgba(255, 255, 255, 0.973),rgba(255, 255, 255, 0.205)),url(images/LM72eLFNgdu1cup2.png);
+  background-repeat: no-repeat;
+  background-position: 0px 65px;
+  height: 100vh;
+  margin: 0 0 50px 0;
+}
+.home-worth-position{
+  display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 0 48px;
+}
+.home-worth-text h4{
+  font-size: 31px;
+  margin: 35px 0;
+}
+.home-worth-text input[type=text]{
+  background-color: white;
+    padding: 13px 20px;
+    display: inline-block;
+    border: 1px solid gray;
+    width: 100%;
+    box-shadow: 0px 7px 17px 0 grey;
+    margin: 0 0 18px 0;
+}
+.home-worth-text input[type=text]:focus{
+  outline: none;
+}
+/* ***********************testimonmial *************************/
+.banner-8{
+  background:linear-gradient(to right,rgba(0, 0, 0, 0.377),rgba(0, 0, 0, 0.377)), url("images/michael-glass-q91XwU6Ypyk-unsplash.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat ;
+  height: 385px;
+  position: relative;
+}
+/* people about say */
+.testimonial-2-bg{
+  background:linear-gradient(to right,rgba(0, 0, 0, 0.726),rgba(0, 0, 0, 0.726)), url("images/pexels-pixabay-534151.png");
+  background-size: cover;
+  background-position: 0px 60px;
+  background-repeat:no-repeat ;
+  height: 799px;
+  margin: 0 0 50px 0;
+}
+.testimonial-heading{
+  text-align: center;
+ 
+  
+}
+.testimonial-heading h1{
+  color: white;
+  font-size: 65px;
+  padding: 123px 0 0 0;
+}
+/* testimomial carousal */
+.testimonial-carousal{
+  margin: 70px auto 0 auto;
+  max-width: 1200px;
+}
+.testimonial-carousal .owl-next::before {
+  position: absolute;
+  content: "\f178";
+  font-family: FontAwesome;
+  color: white;
+  bottom: -50px;
+  font-size: 36px;
+  margin: 0 0px 0 26px;
+}
+.testimonial-carousal .owl-prev::after {
+  position: absolute;
+  content: "\f177";
+  font-family: FontAwesome;
+  color: white;
+  bottom: -50px;
+  font-size: 37px;
+  margin: 0 0px 0 -25px;
+}
+.carousal-1{
+  position: relative;
+}
+.carousal-1 img{
+  max-width: 100%;
+}
+.testimonial-carousal .owl-dots{
+  display: none;
+}
+.testimonial-carousal .owl-next span,.owl-prev span{
+  display: none;
+}
+.carousal-1-text{
+  position: absolute;
+    top: 15%;
+    bottom: 0;
+    right: 0;
+    left: 2%;
+}
+.carousal-1-text p{
+  font-size: 13px;
+    margin: 0px auto 0 auto;
+    line-height: 2em;
+    max-width: 319px;
+
+}
+.carousal-detail{
+  padding: 0 55px;
+}
+.carousal-detail h4{
+  color: white;
+  font-size: 24px;
+}
+.carousal-detail p{
+  color: white;
+  font-size: 14px;
+}
+/***********************video gallery  *********************/
+.banner-9{
+  background:linear-gradient(to right,rgba(0, 0, 0, 0.377),rgba(0, 0, 0, 0.377)), url("images/interior-3778708_1920.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat ;
+  height: 385px;
+  position: relative;
+}
+.gallery-carousal{
+  margin: 50px auto 70px auto;
+  max-width: 1200px;
+}
+
+.gallery-paragraph h6{
+  font-size: 27px;
+    text-align: center;
+  
+    font-weight: 400;
+    background-color: transparent;
+    margin: 0 auto;
+    max-width: 400px;
+    min-height: 133px;
+    border-top: 1px solid grey;
+    border-right: 1px solid grey;
+    border-left: 1px solid grey;
+    padding: 32px 0 0 0;
+}
+.gallery-paragraph-2 p{
+  font-size: 15px;
+  text-align: center;
+  background-color: transparent;
+  margin: 0 auto;
+  max-width: 400px;
+  min-height: 133px;
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
+  border-left: 1px solid grey;
+  padding: 45px 0;
+}
+.gallery-col{
+  margin: 0 0 50px 0;
+}
+.gallery-image {
+  position: relative;
+}
+.gallery-image img{
+  max-width: 100%;
+}
+.gallery-icon img{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+ right: 0;
+  margin: auto;
+  max-width: 20%;
+}
+
+.gallery-carousal .owl-dots{
+  display: none;
+}
+.gallery-carousal .owl-next span,.owl-prev span{
+  display: none;
+}
+.gallery-carousal .owl-next::before{
+  position: absolute;
+  content: "\f178";
+  font-family: FontAwesome;
+  color:black;
+  bottom: -44px;
+  font-size: 36px;
+  margin: 0 0px 0 26px;
+}
+.gallery-carousal .owl-prev::after{
+  position: absolute;
+  content: "\f177";
+  font-family: FontAwesome;
+  color:black;
+  bottom: -44px;
+  font-size: 37px;
+  margin: 0 0px 0 -25px;
+}
+/* *********contact *********/
+.banner-10{
+  
+  background:linear-gradient(to right,rgba(0, 0, 0, 0.377),rgba(0, 0, 0, 0.377)), url("images/fran-hogan-BDRzsymkZho-.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat ;
+  height: 385px;
+  position: relative;
+}
+.map img{
+  max-width: 100%;
+  margin: 60px auto;
+  display: block;
+}
+/* **************blog ***********/
+.blog-row{
+  
+  margin: 55px auto 0 auto;
+  max-width: 1255px;
+}
+.blog{
+  position: relative;
+}
+.blog-date{
+  position: absolute;
+  bottom: 0;
+  content: " ";
+  left: 0;
+  background-color: white;
+  padding: 16px 37px;
+}
+.blog img{
+  max-width: 100%;
+}
+.blog-text{
+  margin: 0 auto;
+    max-width: 495px;
+    padding: 27px 0;
+}
+.blog-text h1{
+  font-size: 27px;
+}
+.blog-text p{
+  font-size: 18px;
+}
+
+/* responsive */
+@media screen and (max-width:768px){
+  .slider-1 .owl-prev::after,.slider-1 .owl-next::before{
+    bottom: -54px;
+  }
+  .feature-bg{
+    height: 600px;
+  }
+  .work-with-us{
+    padding: 5px 0 0 0;
+  }
+  .meet-heading {
+    margin: 54px auto 0 auto;
+    text-align: center;
+  }
+  .feature-heading{
+    padding: 54px 0 0 0;
+  }
+  .work-bg{
+    width: 95%;
+  }
+  .video-bg{
+    height: 673px;
+  }
+  /* sell your home */
+  .meeting-text p {
+    margin: 0px auto 15px auto;
+  }
+  .property-1-text p {
+    font-size: 12px;
+  }
+  .property-1-text{
+    max-width: 230px;
+  }
+  .property-1-text h6 {
+    font-size: 22px;
+   
+  }
+  /* ***************welcome home *******************/
+  .buyer-text{
+    padding: 45px 0 0 0;
+  }
+  .testimonial-heading h1 {
+    color: white;
+    font-size: 56px;
+  }
+}
+@media screen and (max-width:500px){
+  .team{
+    height: 38vh;
+  }
+  .top-menu{
+    padding: 0 10px;
+  }
+  .nav-border {
+    padding: 20px 13px;
+  }
+  .banner-text h1 {
+    font-size: 60px;
+ }
+  .meet-heading p {
+    font-size: 16px;
+    text-align: justify;
+  }
+  .meet-heading h1,.seller-text h1 {
+    font-size: 49px;
+  }
+  .meeting-text p,.meeting-text p:nth-child(2){
+    font-size: 16px;
+    text-align: justify;
+  }
+  .meeting-button{
+    margin: 8px 0;
+  }
+  .team-detail-info {
+    justify-content: center;
+  }
+  .team-detail-bg{
+    height: 716px;
+  }
+  .team-detail-text p{
+    font-size: 16px;
+    text-align: justify;
+  }
+  .work-with-us{
+    flex-direction: column;
+  }
+  .work-bg {
+    width: 100%;
+    margin: 0px 0 0px 0px;
+    padding: 32px 0 0 10px;
+    min-height: 465px;
+  }
+  .sidenav .closebtn {
+    
+    
+    right: 21px;
+  }
+  .work-bg-text h1 {
+    font-size: 37px;
+  
+  }
+  .work-bg-text p{
+    font-size: 16px;
+    text-align: justify;
+  }
+  .testimonial-bg {
+    height: 1289px;
+}
+  .testimonial-1 p {
+    font-size: 16px;
+  }
+  .join-text h1 {
+    font-size: 35px;
+  }
+  .join-text h6 {
+    font-size: 35px;
+
+  }
+  .join-form input[type=text]{
+    width: 80%;
+  }
+  .video-heading h1 {
+    font-size: 53px;
+  }
+  .video-heading{
+    padding: 5px 0 0 0;
+  }
+  .join-text {
+   
+    padding: 43px 0 0 0;
+  }
+  .join-text p {
+    color: #D6D6D6;
+    font-size: 19px;
+  }
+  .join-form {
+    padding: 0px 0px;
+  }
+  .join-bg {
+    height: 784px;
+  }
+  .video-bg {
+    height: 488px;
+  }
+  .testimonial-col {
+    transform: translate(0%, 0%);
+  }
+  /* sell your home */
+  .banner-2-text h1 {
+    font-size: 53px;
+}
+  .seller-row{
+    padding: 0 0 0 0;
+  }
+  .seller-bg,.seller-2-bg {
+    height: 833px;
+  }
+  .meat-text p{
+    font-size: 16px;
+    margin: 32px auto 0 auto;
+    text-align: justify;
+  }
+  
+  .join-text p {
+    color: #D6D6D6;
+    font-size: 16px;
+    text-align: justify;
+}
+ 
+  .seller-text p {
+    font-size: 16px;
+    text-align: justify;
+  }
+  .meeting-bg{
+    margin: 0px 0 0 0;
+    height: 40vh;
+  }
+  .property-1-text {
+    max-width: 252px;
+  }
+  .property-1-text p {
+    font-size: 12px;
+    text-align: justify;
+}
+  .footer-text p,.footer-text p:nth-child(5) {
+    font-size: 16px;
+  }
+  .footer-text p:nth-child(7){
+    font-size: 16px;
+    text-align: justify;
+  }
+  /*********************welcome home  *************************/
+  .buyer-row{
+    flex-direction: column;
+  }
+  .buyer-text {
+    width: 92%;
+  }
+  .buyer-image{
+    width: 100%;
+  }
+  .buyer-text h1 {
+    font-size: 53px;
+  }
+  .buyer-text p{
+    font-size: 16px;
+    text-align: justify;
+  }
+  .home-buyer-bg{
+    height: 958px;
+    margin: 0 0 104px 0;
+  }
+  .community-box-text h6 {
+    font-size: 40px;
+  }
+  .community-box-text p {
+    font-size: 16px;
+    text-align: justify;
+  }
+   /* *****************heading here ***********************/
+   .houses-detail p{
+     font-size: 16px;
+     text-align: justify;
+   }
+   /* ******communities ********/
+   .banner-6-text h1 {
+    font-size: 53px;
+  }
+  .home-worth-text h4 {
+    font-size: 26px;
+  }
+  .home-worth-position{
+    padding: 0 11px;
+  }
+  .testimonial-heading h1 {
+    
+    font-size: 48px;
+  }
+  .blog-text p {
+    font-size: 16px;
+    text-align: justify;
+  }
+  .blog-text h1 {
+    font-size: 23px;
+}
+.item-1 {
+  margin: 0 auto;
+  width: 93%;
+}
+.team-1 {
+  position: relative;
+  width: 100%;
+}
+  .carousal-1-text p {
+    font-size: 11px;
+   
+    
+    max-width: 269px;
+}
+.work-bg-text {
+  max-width: 301px;
+  
+}
+}
+ 
+
